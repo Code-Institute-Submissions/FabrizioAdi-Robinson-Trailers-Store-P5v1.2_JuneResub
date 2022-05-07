@@ -5,6 +5,7 @@
             <p class="my-0">Search</p>
         </div>
     </a>
+
     <!-- Search Bar -->
     <!-- This navbar is separate from main navigation and should be cleanly dipley on mobile -->
     <div class="dropdown-menu border-0 w-100 p-3 rounded-0 my-0" aria-labelledby="mobile-search">
@@ -22,6 +23,7 @@
         </form>
     </div>
 </li>
+
 <!-- My account dropdown menu -->
 <li class="list-inline-item dropdown">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -43,7 +45,8 @@
         {% endif %}
     </div>
 </li>
-<!-- Access the shopping cart -->
+
+<!-- Access the shopping cart and Total -->
 <li class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
         <div class="text-center">
