@@ -3,10 +3,10 @@ html {
 }
 
 body {
-    background: rgb(87, 86, 86);
+    background: rgb(138, 137, 137);
     background-size: cover;
     height: calc(100vh - 164px);
-    color: rgb(247, 242, 242);
+    color: rgb(14, 13, 13);
     font-family: 'Roboto', sans-serif;
 }
 
@@ -34,8 +34,8 @@ body {
 }
 
 .btn-black {
-    background: black;
-    color: white;
+    background: rgb(10, 10, 10);
+    color: rgb(243, 241, 241);
 }
 
 .shop-now-button:hover,
@@ -44,12 +44,12 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: #222;
-    color: white;
+    background: rgb(1, 167, 15);
+    color: rgb(245, 241, 241);
 }
 
 .text-black {
-    color: #000 !important;
+    color: rgb(7, 7, 7) !important;
 }
 
 .border-black {
@@ -66,7 +66,7 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: rgb(243, 241, 241);
 	z-index: -1;
 }
 
