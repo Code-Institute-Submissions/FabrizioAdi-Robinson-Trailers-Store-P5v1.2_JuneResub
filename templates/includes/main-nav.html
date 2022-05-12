@@ -6,9 +6,9 @@
             </a>
 <!-- User can view products at once or sort by category, price, rating -->          
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -34,7 +34,7 @@
                 <a href="{% url 'products' %}?category=platform" class="dropdown-item">Platform</a>
                 <a href="{% url 'products' %}?category=block_crane" class="dropdown-item">Block Crane</a>
                 <a href="{% url 'products' %}?category=bulk_tipper" class="dropdown-item">Bulk Tipper</a>
-                <a href="{% url 'products' %}?category=platform,block_crane," class="dropdown-item">All Construction</a>
+                <a href="{% url 'products' %}?category=platform,block_crane,bulk_tipper" class="dropdown-item">All Construction</a>
             </div>
         </li>
 
@@ -50,4 +50,5 @@
             </div>
         </li>
     </ul>
+    </div>
         
