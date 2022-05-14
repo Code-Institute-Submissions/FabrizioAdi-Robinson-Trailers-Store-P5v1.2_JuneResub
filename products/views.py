@@ -10,6 +10,9 @@ def all_products(request):
     products = Product.objects.all()
     query = None
     categories = None
+    sort = 'Default'
+    direction = 'Ascending'
+    print(request)
 
     if request.GET:
         if 'sort' in request.GET:
@@ -17,7 +20,7 @@ def all_products(request):
             sort = sortkey
             if sortkey == 'name':
                 sortkey = 'lower_name'
-                products = products.annotate(lower_name=Lower('name'))
+                products = products.annotate(lower_name=('name').lower())
 
         if 'direction' in request.GET:
             direction = request.GET['direction']
