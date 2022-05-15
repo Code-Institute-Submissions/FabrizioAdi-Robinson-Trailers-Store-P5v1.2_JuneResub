@@ -1,108 +1,247 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Robinson Trailers Store
 
-Welcome FabrizioAdi,
+This is the fifth and last portfolio project for the Code Institute Diploma in Fullstack Software Development and E-Commerce Applications. Web Application Store is dedicated to a real trailers manufacturing company. Located in Portarlington Co. Laoise.
+Robinson Trailers is created for customers seeking to purchase trailers online. Users can create accounts and administrators have full write and delete access to all data.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+You can view the deployed site - ...
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Table of Contents
 
-## Gitpod Reminders
+### Project Overview
+### Agile Workflow
+### User Experience
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+Project goals
+Business goals
+User Goals
+Site Owner goals
+Target audience
 
-`python3 -m http.server`
+Strategy
+Primary Goals
+The site owners primary goals are:
+A potential customers primary goals are:
 
-A blue button should appear to click: _Make Public_,
+Business Model
+Marketing
+Search Engine Optimisation
 
-Another blue button should appear to click: _Open Browser_.
+### Structure
+Pages
+Accessible to all users
+Accessible to signed in users
+Accessible to Admin users
+Pages provided by Django
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+### Technical Design
+Code Structure
+Other Directories and files
+Database
 
-Another blue button should appear to click: _Open Browser_.
+Data Models
+The following models have been used to populate the database and for the site to function as it should:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+User - the built in Django User model, facilitates the users basic information
 
-To log into the Heroku toolbelt CLI:
+Category - the category in which the product is placed
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+Brand - the brand of the product
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+Product - the model for the product itself and its details
 
-------
+Review - a model for users to give the product a rating and a review
 
-## Release History
+Order - a users successful purchase leads to an instance of the Order model being created, storing delivery and user data
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+OrderLineItem - a model holding the product information for a single product, binding the product model together with the order
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+UserProfile - the model storing the users product and order information
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+WishListItem - the customer has the option to save an item, which will then appear in their wish list on the My StepUp page
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+Schema of models
+<Diagrams images>
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+### Scope - Epics and User Stories
+Epic 1: Base functionality and ease of use
+Epic 2: Products
+Epic 3: The Cart
+Epic 4: Checkout
+Epic 5: User registration and account
+Epic 6: The Wish List
+Epic 7: Reviews
+Epic 8: Contact
+Epic 9: Site Owner functionality
+Epic 10: Terms and Policy
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+### Wireframes
+Surface
+Colors
+Design Choices
+Typography
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Existing Features
+Feature 1: The Navbar
+Feature 2: The Home Page
+Feature 3: The Footer
+Feature 4: The Products List
+Feature 5: The Product Detail Page
+Feature 6: The Cart
+Feature 7: The Checkout Page
+Feature 8: The Order Successful Page
+Feature 9: The Sign Up/In/Out Pages
+Feature 10: My StepUp
+Feature 11: The Wishlist
+Feature 12: The Contact Page
+Feature 13: The Admin Features
+Feature 14: The Django Admin
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Features Yet to Implement
+### Technologies Used
+#### Languages
+Python 3.8 was used for backend of the project.
+HTML5 was used for building all web pages.
+jQuery is used for implementation of Bootstrap.
+CSS3 used for styling the website.
+JavaScript for alert and location fnunctionality.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#### Frameworks, Libraries and Other Resources
+This project is built through the framework Django.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+GitPod is used to develop the project. All code was written and tested with the Gitpod web-based IDE.
+Git control system was used for version control to commit to Git and push to GitHub.
+GitHub projects repository is used to host the project.
+Heroku is used to host the project/Used to deploy the application.
+Bootstrap 5 as a framework used for styling.
+Pip3 is used for installing the necessary tools, libraries and frameworks.
+Spycopg2 is used to enable the PostGreSQL database to connect with Django.
+AWS Amazon used to store static and media files.(CSS and JavaScript)
+Boto3 is used for compatibility in AWS.
+Gunicorn is used to enable deployment to Heroku.
+Google Fonts is used to provide the font roboto for all the text that is used in the project.
+Font Awesome fonts were used for all icons in this project.
+Figma/Balsamiq used to create the mockup designs for the project.
+Django Crispy Forms is used to style the Django forms
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+I have used Bootstrap 4 as a framework for styling for efficiency purposes.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+The JavaScript framework JQuery was used to minimize written code.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Font Awesome fonts were used for all icons in this project.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Google Fonts - Were used for all fonts in this project.
 
-------
+Facebook Pages was used to create the Facebook Business Page that is linked on the site.
 
-## FAQ about the uptime script
+Mailchimp was used to create the newsletter signup form.
 
-**Why have you added this script?**
+Git - Version control system used to commit and push to Github via Gitpod.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Github - The projects repository and all its branches were commited, and pushed to Github.
 
-**How will this affect me?**
+Heroku - Used to deploy the application.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+AWS S3 Bucket - Used to host media (images) and static(CSS and JavaScript) files for the site.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+Stripe - Used to process the users payments and handle webhooks.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+Gitpod - All code was written and tested with the Gitpod web-based IDE.
 
-**So….?**
+Balsamiq Wireframes was used to create wireframe images of the website which you can view here.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+Lucidchart was used to create the visual model schema of the project.
 
-**Can I opt out?**
+#### Database
+PostgreSQL is used as the production database.
+SQlite3 is used as the development database.
+### Testing
+### Other Services
+Stripe
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Validation
+Chrome DevTools is used to detect problems and test responsiveness.
+Autoprefixer is used to parse the CSS and to add vendor prefixes to CSS rules.
+W3C Markup Validation Service is used to check whether there were any errors in the HTML5 code.
+W3C CSS validator is used to check whether there were any errors in the CSS3 code.
+JShint is a JavaScript validator that is used to check whether there were any errors in the JavaScript code.
+PEP8 validator is used to check whether there were any errors in the Python code.
+PEP8 Validation
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+HTML Validation
 
-**Anything more?**
+CSS Validation
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+Performance/Accessibility
 
----
+Devices
 
-Happy coding!
+Testing for User Stories
+
+### Deployment
+GitHub Repository
+
+1. Access your GitHub account and find the relevant repository.
+2. Click on 'Fork' on the top right of the page.
+3. You will find a copy of the repository in your own Github account.
+
+Making a Local Clone
+
+1. Access your GitHub account and find the relevant repository.
+2. Click the 'Code' button next to 'Add file'.
+3. To clone the repository using HTTPS, under clone with HTTPS, copy the link.
+4. Open Git Bash.
+5. Access the directory you want the clone to be have.
+6. In your IDE's terminal type 'git clone' and the paste the URL you copied.
+7. Press Enter.
+8. You now have a local clone.
+
+Heroku
+
+1. Create an account at heroku.com
+2. Create a new app, add app name and your region
+3. Click on create app
+4. Go to "Settings"
+5. Under Config Vars, add your sensitive data (creds.json for example)
+6. For this project, I set buildpacks to and in that order.
+7. Go to "Deploy" and at "Deployment method", click on "Connect to Github"
+8. Enter your repository name and click on it when it shows below
+9. Choose the branch you want to buid your app from
+10. If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+
+AWS S3
+1. Create an account at aws.amazon.com
+2. Navigate to the IAM application and create a user and group
+3. Set the AmazonS3FullAccess for the user and copy the AWS ACCESS and SECRET keys as config vars to your workspace and deployment environment
+4. Create a new Bucket within the S3 application with an appropriate name.
+5. Enable public access for your bucket so users can access and use the services on your website (upload, view, download, etc.
+More info can be read in the official documentation: https://aws.amazon.com/s3/
+
+Google API
+
+1. Login or create a Google account and navigate to https://console.cloud.google.com/
+2. Create a new Project by clicking on the New Project icon
+3. Add Project name and details
+4. Under API's and services, enable the relevant API for your project (in this case Google Drive, Sheets and Calendar)
+5. IF the API requires, create a credential (service account in this case) for your project
+6. Save the API key as a secret in config vars in your workspace and deployment environment
+7. Under API's and services, enable the relevant API for your project (in this case Google Drive, Sheets and Calendar)
+8. Search for the needed tasks to be performed in the documentation for the specific API, for example here for the calendar API: Google Maps API Reference
+9. Add them to your code.
+
+### Performance
+Performance was tested using Google Chrome's Lighthouse tool in DevTools built into the browser. The performance tests can be viewed
+
+### Accessibility
+
+### Bugs
+
+### Credits
+Reference
+Websites, movies that I used while working on the project.
+
+Copyrights
+Coding Tips and Tricks
+Acknowledgments
+
