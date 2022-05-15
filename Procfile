@@ -1,1 +1,1 @@
-web: gunicorn robinson_trailers.wsgi
+web: gunicorn robinson_trailers.wsgi:application
