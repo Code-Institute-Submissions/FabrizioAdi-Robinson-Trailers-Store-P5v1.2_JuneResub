@@ -47,13 +47,41 @@
                                     <p class="my-0">${{ item.product.price }}</p>
                                 </td>
                                 <td class="py-3 w-25">
-                                    <p class="my-0">{{ item.quantity }}</p>
-                                </td>
-                                <td class="py-3">
-                                    <p class="my-0">${{ item.product.price }}</p>
-                                </td>
-                            </tr>
-                        {% endfor %}
+                                    <form class="form update-form" method="POST" action="">
+                                    {% csrf_token %}
+                                    <div class="form-group">
+                                        <!-- How many items to purchase -->
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn btn-sm btn-black rounded-0" 
+                                            data-item_id="{{ product.id }}" id="decrement-qty_{{ product.id }}">
+                                            <span>
+                                                <i class="fas fa-minus fa-sm"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    
+                                    <input class="form-control form-control-sm qty_input" type="number"
+                                    name="quantity" value="1" min="1" max="99"
+                                    data-item_id="{{ product.id }}"
+                                    id="id_qty_{{ product.id }}">
+                                    <div class="input-group-append">
+                                        <button class="increment-qty btn btn-sm btn-black rounded-0"
+                                        data-item_id="{{ product.id }}" id="increment-qty_{{ product.id }}">
+                                        <span>
+                                            <i class="fas fa-plus fa-sm"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </td>
+                <td class="py-3">
+                    <p class="my-0">${{ item.product.price }}</p>
+                </td>
+                </tr>
+                {% endfor %}
                         <!-- Delivery with Cart total -->
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
