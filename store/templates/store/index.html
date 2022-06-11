@@ -10,17 +10,37 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100">
+<div class="container-fluid">
     <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
+
+        <!--<div class="col-7 col-md-6 my-auto">-->
+            <div class="col-12 col-md-8 mx-auto">
             <h1 class="display-4 logo-font text-black">
-                The new technology are here
+                Manufacturers and Suppliers of a complete range of Trailers and Equipment.
             </h1>
             <div class="my-5">
-                <h4>
-                    <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Buy Now</a>
+                <h4 class="text-center">
+                    <a href="{% url 'products' %}" class="btn btn-danger btn-lg text-uppercase py-3">Show Products</a>
                 </h4>
             </div>
+<!-- Company description -->
+            <section class="row w-100 mx-auto">
+                <div class="col col-md-8 text-center mx-auto my-5">
+                    <h4>Company Description</h4>
+                    <p>
+                        Robinson was founded in 2002 by brothers Ross and Scott Robinson, both having a good knowledge in forestry equipment. 
+                        The company was at that time established to distribute forest machinery and equipment. 
+                        They distributed various brands and over the years they managed to add many important agencies to their portfolio. 
+                        Through the distribution of this variety of brands, it became apparent that there was a need for a timber trailer to meet the needs of hauliers on the Irish market. 
+                        Therefore, Robinson took a large step in 2004 by producing their first trailer. 
+                        Substantial investment in both research and equipment was needed, but the brothers were confident since there was family knowledge and history in this field as their father, Alan Robinson, had already produced his first timber trailer in 1980. 
+                        The Robinson trailers were soon very well accepted by the market, leading to the ongoing development of a wide variety of new trailer models, as they are requested by end users. 
+                        They also manufacture once-off trailers to meet specific end users needs. 
+                        Robinson has become a market leading trailer and crane manufacturer, supplying an ever growing customer base across Ireland, the UK and main land Europe.
+                    </p>
+                </div>
+            </section>
+
         </div>
     </div>
 </div>

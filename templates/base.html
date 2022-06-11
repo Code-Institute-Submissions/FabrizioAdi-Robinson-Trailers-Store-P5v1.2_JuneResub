@@ -65,7 +65,7 @@
                 </div>
             </form>
         </div>
-        <!-- Account and shopping cart -->
+        <!-- Account authorisation -->
         <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
           <ul class="list-inline list-unstyled text-center text-lg-right my-0">
             <li class="list-inline-item dropdown">
@@ -79,7 +79,7 @@
                 <div class="dropdown-menu border-0" aria-labelledby="user-options">
                   {% if request.user.is_authenticated %}
                       {% if request.user.is_superuser %}
-                          <a href="" class="dropdown-item">Product Management</a>
+                          <a href="" class="dropdown-item">Add Product</a>
                       {% endif %}
                       <a href="" class="dropdown-item">My Profile</a>
                       <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -89,6 +89,8 @@
                   {% endif %}
               </div>
           </li>
+
+          <!-- Shoping cart -->
           <li class="list-inline-item">
               <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_cart' %}">
                   <div class="text-center">
