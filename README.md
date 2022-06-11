@@ -3,7 +3,7 @@
 This is the fifth and last portfolio project for the Code Institute Diploma in Fullstack Software Development and E-Commerce Applications. Web Application Store is dedicated to a real trailers manufacturing company. Located in Portarlington Co. Laoise.
 Robinson Trailers is created for customers seeking to purchase trailers online. Users can create accounts and administrators have full write and delete access to all data.
 
-You can view the deployed site - ...
+[You can view the deployed site -](https://robinson-trailers-store.herokuapp.com/)
 
 ## Table of Contents
 
@@ -209,6 +209,22 @@ Heroku
 8. Enter your repository name and click on it when it shows below
 9. Choose the branch you want to buid your app from
 10. If desired, click on "Enable Automatic Deploys", which keeps the app up to date with your Github repository
+
+Manualy deploy to heroku from gitpod workspace.
+
+1. Open the terminal.
+2. For those of you who are using MFA/2FA: please scroll down to see the additional steps required.
+For those of you not using MFA/2FA: Log in to Heroku and enter your details.
+command: heroku login -i
+3. Get your app name from heroku.
+command: heroku apps
+4. Set the heroku remote. (Replace <app_name> with your actual app name and remove the <> characters)
+command: heroku git:remote -a <app_name>
+5. Add and commit any changes to your code if applicable
+command: git add . && git commit -m "Deploy to Heroku via CLI"
+6. Push to both GitHub and Heroku
+command: git push origin main
+command: git push heroku main
 
 AWS S3
 1. Create an account at aws.amazon.com
