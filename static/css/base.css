@@ -24,6 +24,10 @@ body {
     text-transform: uppercase;
 }
 
+hr {
+    border-color:white;
+}
+
 .main-logo-link {
     width: fit-content;
 }
