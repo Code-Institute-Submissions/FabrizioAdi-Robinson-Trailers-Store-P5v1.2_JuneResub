@@ -64,5 +64,3 @@ def remove_from_cart(request, item_id):
 
     request.session['cart'] = cart
     return HttpResponse(status=200)
-    #messages.error(request, f'Error removing item: {e}')
-    #return HttpResponse(status=500)
