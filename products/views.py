@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
@@ -27,11 +27,11 @@ def all_products(request):
             if sortkey == 'category':
                 sortkey = 'category__name'
 
-        if 'direction' in request.GET:
-            direction = request.GET['direction']
-            if direction == 'desc':
-                sortkey = f'-{sortkey}'
-                products = products.order_by(sortkey)
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
