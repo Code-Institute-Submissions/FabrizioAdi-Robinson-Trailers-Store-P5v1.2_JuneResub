@@ -6,6 +6,7 @@ from django.conf import settings
 
 from products.models import Product
 
+
 class Order(models.Model):
     order_number = models.CharField(max_length=32, null=False, editable=False)
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -24,8 +25,7 @@ class Order(models.Model):
 
     def _generate_order_number(self):
         """ Generate a random,
-        unique order namber using uuid. 
-        """
+        unique order namber using uuid. """
         return uuid.uuid4().hex.upper()
 
     def update_total(self):
@@ -41,15 +41,15 @@ class Order(models.Model):
         self.save()
 
     def save(self, *args, **kwargs):
-        """ Override the original save method to set the order number 
-        if it hasn't been set already. 
-        """
+        """ Override the original save method to set the
+        order number if it hasn't been set already. """
         if not self.order_number:
             self.order_number = self._generate_order_number()
         super().save(*args, **kwargs)
 
     def __str__(self):
         return self.order_number
+
 
 class OrderLineItem(models.Model):
     order = models.ForeignKey(Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')

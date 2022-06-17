@@ -5,6 +5,7 @@ from .forms import OrderForm
 
 # Create your views here.
 
+
 def checkout(request):
     cart = request.session.get('cart', {})
     if not cart:
