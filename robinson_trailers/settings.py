@@ -28,7 +28,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["robinson-trailers-store.herokuapp.com", "localhost"]
 
@@ -50,6 +50,7 @@ INSTALLED_APPS = [
     'products',
     'cart',
     'checkout',
+    'profiles',
     # Other app
     'crispy_forms',
 ]
