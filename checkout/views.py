@@ -61,20 +61,30 @@ def checkout(request):
             order.save()
 
             for item_id, item_data in cart.items():
-                product = Product.objects.get(id=item_id)
-                if isinstance(item_data, int):
-                    order_line_item = OrderLineItem(
-                        order=order,
-                        product=product,
-                        quantity=item_data,
+                try:
+                    product = Product.objects.get(id=item_id)
+                    if isinstance(item_data, int):
+                        order_line_item = OrderLineItem(
+                            order=order,
+                            product=product,
+                            quantity=item_data,
                         )
-                    order_line_item.save()
-
-                if Product.DoesNotExist:
+                        order_line_item.save()
+                    else:
+                        for size, quantity in item_data['items_by_size'].items():
+                            order_line_item = OrderLineItem(
+                                order=order,
+                                product=product,
+                                quantity=quantity,
+                                product_size=size,
+                            )
+                            order_line_item.save()
+                except Product.DoesNotExist:
                     messages.error(request, (
-                        "One of the products in your cart wasn't found in our database. "
+                        "One of the products in your bag wasn't found in our database. "
                         "Please call us for assistance!")
                     )
+                
                 order.delete()
                 return redirect(reverse('view_cart'))
 
