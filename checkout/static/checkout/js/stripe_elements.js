@@ -67,7 +67,7 @@ form.addEventListener('submit', function(ev) {
 
     $.post(url, postData).done(function () {
 
-    stripe.confirmCardPayment(clientSecret, {
+    stripe.confirmCardPayment(client_secret, {
         payment_method: {
             card: card,
             billing_details: {
