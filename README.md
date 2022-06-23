@@ -46,6 +46,10 @@ The focus points for this application are ecommerce, using the Django framework 
 
 ### Agile Workflow
 
+I have tried to implement the basic Agile strategy, creating issues for my user stories, a Kanban board for the project, Milestones for each epic and moving the stories from to do to done.
+
+![](prtsc/images/kanban.png)
+
 [View the Project Kanban board](https://github.com/FabrizioAdi/Robinson-Trailers-Store-P5v1.2/projects/1)
 
 ## User Stories
@@ -347,11 +351,32 @@ It will take me right to that line where the issue is.
 ![](prtsc/images/flake8ctrl.png)
 
 
+3. HTML Validation [Link](https://validator.w3.org/)
+
+I tested the HTML code by running my server locally by port 8000 and used view page source. This code I passed through the validator. There was a four the same error -li not allowed as a child element in this context. Similar error shown in -ul element.
+
+![](prtsc/images/w3.png)
 
 
-HTML Validation
+4. CSS Validation [Link](https://jigsaw.w3.org/css-validator/)
 
-CSS Validation
+No big errors found.
+I got this message: This document is a properly written CSS version 3 + SVG.
+Congratulations! There is no errors
+
+![](prtsc/images/css.png)
+
+5. Lighthouse testing
+
+I used the automated tool Lighthouse to test the quality of the web pages.
+
+![](prtsc/images/lighthouse.png)
+
+Results:
+
+![](prtsc/images/lighthouse2.png)
+
+
 
 Performance/Accessibility
 

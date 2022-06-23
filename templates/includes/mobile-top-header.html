@@ -1,4 +1,4 @@
-<li class="list-inline-item">
+<div class="list-inline-item">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-search fa-lg"></i></div>
@@ -22,16 +22,16 @@
             </div>
         </form>
     </div>
-</li>
+</div>
 
 <!-- My account dropdown menu -->
-<li class="list-inline-item dropdown">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        <div class="text-center">
+<!-- <li class="list-inline-item dropdown">
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> -->
+        <!-- <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
             <p class="my-0">My Account</p>
-        </div>
-    </a>
+        </div> -->
+
     <div class="dropdown-menu border-0" aria-labelledby="user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
@@ -44,10 +44,9 @@
             <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
         {% endif %}
     </div>
-</li>
 
 <!-- Access the shopping cart and Total -->
-<li class="list-inline-item">
+<div class="list-inline-item">
     <a class="{% if grand_total %}text-primary font-weight-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
         <div class="text-center">
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -60,4 +59,4 @@
             </p>
         </div>
     </a>
-</li>
+</div>
