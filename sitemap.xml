@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/accounts/signup/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/accounts/login/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/cart/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?sort=price&amp;direction=asc</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?sort=rating&amp;direction=desc</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?sort=category&amp;direction=asc</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=semi</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=centre_axle_drawbar</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=turntable</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=semi_crane</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=semi,centre_axle_drawbar,turntable,semi_crane</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=platform</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=block_crane</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=bulk_tipper</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=platform,block_crane,bulk_tipper</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=new_arrivals</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=deals</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=clearance</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=new_arrivals,deals,clearance</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/accounts/password/reset/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view12/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view13/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view20/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view14/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view11/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view6/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view17/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view10/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view8/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view15/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view1/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view2/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view7/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view18/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view19/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view21/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=skelly</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view16/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view22/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/?category=special_built</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view9/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view4/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view3/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://robinson-trailers-store.herokuapp.com/products/view5/</loc>
+  <lastmod>2022-06-23T23:21:02+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
+</urlset>

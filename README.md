@@ -184,6 +184,8 @@ Marketing
 
 Search Engine Optimisation
 
+![](prtsc/images/meta.png)
+
 ### Structure
 Pages
 Accessible to all users
