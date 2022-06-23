@@ -3,31 +3,11 @@ html {
 }
 
 body {
-    background-color: #080808;
+    background-color: #f8f4f4;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #faf5f5;
+    color: #070707;
     font-family: 'Roboto', sans-serif;
-}
-
-h2 {
-    color: #000;
-}
-
-.mt-3 {
-    color:#000;
-}
-
-.mb-0 {
-    color:#000;
-}
-
-label {
-    color:#000;
-}
-
-.lead {
-    color:#000;
 }
 
 /* from Bulma similar site to Bootstrap */
@@ -45,7 +25,7 @@ label {
 }
 
 hr {
-    border-color:rgb(247, 242, 242);
+    border-color:rgb(10, 10, 10);
 }
 
 .w-50 {
