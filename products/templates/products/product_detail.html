@@ -101,6 +101,23 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <h2>Review...</h2>
+        <p>In this section you can read our customer review.</p>
+        {% if not product.review.all %}
+        <p>No comments yet...<a href="#">
+            Please add one
+        </a></p>
+        {% else %}
+        {% for review in product.review.all %}
+        <strong>
+            {{ review.name }}
+            {{ review.created_on }}
+        </strong>
+        <br/>
+            {{ review.body }}
+            {% endfor %}
+        {% endif %}
     </div>
 {% endblock %}
 
