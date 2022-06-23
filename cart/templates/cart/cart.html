@@ -81,44 +81,26 @@
                             </div>
                         </div>
                     </form>
+
                     <!-- Link to js Update quantity and Remove Button -->
-                    <a class="update-link text-info"><small>Update</small></a>
-                    <a class="remove-item text-danger float-right" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                <td class="py-3 w-25">
+                    {% include "cart/quantity-form.html" %}
                 </td>
                 <td class="py-3">
-                    <p class="my-0">${{ item.product.price }}</p>
+                    <p class="my-0">${{ item.product.price | calc_subtotal:item.quantity }}</p>
                 </td>
                 </tr>
                 {% endfor %}
                         <!-- Delivery with Cart total -->
                         <tr>
                             <td colspan="5" class="pt-5 text-right">
-                                <h6><strong>Cart Total: ${{ total|floatformat:2 }}</strong></h6>
-                                <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
-                                <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
-                                {% if free_delivery_delta > 0 %}
-                                    <p class="mb-1 text-danger">
-                                        You could get free delivery by spending just <strong>${{ free_delivery_delta }}</strong> more!
-                                    </p>
-                                {% endif %}
+                                {% include "cart/cart-total.html" %}
                             </td>
                         </tr>
                         <!-- Keep Shopping button -->
                         <tr>
                             <td colspan="5" class="text-right">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                                <!-- Secure Checkout button -->
-                                <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                    <span class="text-uppercase">Secure Checkout</span>
-                                    <span class="icon">
-                                        <i class="fas fa-lock"></i>
-                                    </span>
-                                </a>
+                                {% include "cart/checkout-buttons.html" %}
                             </td>
                         </tr>
                     </table>  
