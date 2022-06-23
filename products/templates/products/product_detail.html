@@ -109,6 +109,8 @@
             Please add one
         </a></p>
         {% else %}
+        <a href="#">Add Review</a>
+        <br/>
         {% for review in product.review.all %}
         <strong>
             {{ review.name }}

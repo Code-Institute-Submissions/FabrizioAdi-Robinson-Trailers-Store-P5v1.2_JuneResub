@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 from .models import Product, Category
 
+
 from .forms import ProductForm
 
 # Create your views here.
@@ -77,7 +78,7 @@ def add_product(request):
     """ Add a product to the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
-        return redirect(reverse('home'))
+        return redirect(reverse('store'))
 
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
@@ -137,3 +138,4 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Product deleted!')
     return redirect(reverse('products'))
+
