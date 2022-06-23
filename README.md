@@ -1,5 +1,7 @@
 # Robinson Trailers Store
 
+![](prtsc/images/home.png)
+
 This is the fifth and last portfolio project for the Code Institute Diploma in Fullstack Software Development and E-Commerce Applications. Web Application Store is dedicated to a real trailers manufacturing company. Located in Portarlington Co. Laoise.
 Robinson Trailers is created for customers seeking to purchase trailers online. Users can create accounts and administrators have full write and delete access to all data.
 
@@ -28,6 +30,7 @@ Robinson Trailers is created for customers seeking to purchase trailers online. 
     + [Accessibility](#accessibility)
     + [Bugs](#bugs)
     + [Credits](#credits)
+    + [Reference](#reference)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -43,7 +46,7 @@ The focus points for this application are ecommerce, using the Django framework 
 
 ### Agile Workflow
 
-[View the Project Kanban board]()
+[View the Project Kanban board](https://github.com/FabrizioAdi/Robinson-Trailers-Store-P5v1.2/projects/1)
 
 ## User Stories
 
@@ -321,7 +324,30 @@ W3C Markup Validation Service is used to check whether there were any errors in 
 W3C CSS validator is used to check whether there were any errors in the CSS3 code.
 JShint is a JavaScript validator that is used to check whether there were any errors in the JavaScript code.
 PEP8 validator is used to check whether there were any errors in the Python code.
-PEP8 Validation
+
+1. PEP8 Validation [Link](http://pep8online.com/)
+
+Most of the errors that were shown concerned:
+* Missing whitespace around operator
+* Expected 2 blank lines, found 1
+
+![](prtsc/images/pep8.png)
+
+2. Flake8
+
+To check the problems invoke the linter manually.
+Use command: python3 -m flake8
+Which will output all the issues to the terminal.
+
+![](prtsc/images/flake8.png)
+
+I hold ctrl and click on the individual files.
+It will take me right to that line where the issue is.
+
+![](prtsc/images/flake8ctrl.png)
+
+
+
 
 HTML Validation
 
@@ -415,3 +441,10 @@ Copyrights
 Coding Tips and Tricks
 Acknowledgments
 
+### Reference
+
+Websites, movies that I used while working on the project:
+
+The whole project was mainly based on the Butique Adog project walktrough from Code Institute,
+
+[How to Create Login System](https://www.youtube.com/watch?v=1UvTNMH7zDo)
