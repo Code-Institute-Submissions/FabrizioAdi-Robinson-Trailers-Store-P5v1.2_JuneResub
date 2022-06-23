@@ -3,11 +3,23 @@ html {
 }
 
 body {
-    background: rgb(105, 105, 105);
+    background-color: #080808;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: rgb(7, 7, 7);
+    color: #faf5f5;
     font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #000;
+}
+
+.mb-0 {
+    color:#000
+}
+
+label {
+    color: #000;
 }
 
 /* from Bulma similar site to Bootstrap */
@@ -30,6 +42,10 @@ hr {
 
 .main-logo-link {
     width: fit-content;
+}
+
+main#main-container {
+    margin-top: 170px;
 }
 
 .shop-now-button {
@@ -67,7 +83,7 @@ hr {
 }
 
 .text-black {
-    color: rgb(10, 10, 10) !important;
+    color: rgb(12, 12, 12) !important;
 }
 
 .border-black {
@@ -84,13 +100,13 @@ hr {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: rgb(243, 241, 241);
+	background: rgb(247, 245, 245);
 	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
+    background: #19c222 !important;
+    color: rgb(14, 13, 13) !important;
 }
 
 .btt-button {
