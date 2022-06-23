@@ -14,12 +14,20 @@ h2 {
     color: #000;
 }
 
+.mt-3 {
+    color:#000;
+}
+
 .mb-0 {
-    color:#000
+    color:#000;
 }
 
 label {
-    color: #000;
+    color:#000;
+}
+
+.lead {
+    color:#000;
 }
 
 /* from Bulma similar site to Bootstrap */
@@ -37,7 +45,11 @@ label {
 }
 
 hr {
-    border-color:white;
+    border-color:rgb(247, 242, 242);
+}
+
+.w-50 {
+    border-color:#000
 }
 
 .main-logo-link {
