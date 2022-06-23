@@ -103,7 +103,23 @@
         </div>
         <hr>
         <h2>Review...</h2>
-        <p>In this section you can read our customer review.</p>
+        <p>In this section you can read our customers review or add new one.</p>
+        <!-- {% if review %}
+                <div class="alert alert-success" role="alert">
+                    Your review is awaiting approval
+                </div>
+                {% else %}
+                {% if user.is_authenticated %}
+
+                <h4>Write Your Review:</h4>
+                <p>Posting as: {{ user.username }}</p>
+                <form method="post" style="margin-top: 1.3em;">
+                    {{ review_form | crispy }}
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-signup btn-lg">Submit</button>
+                </form>
+                {% endif %}
+                {% endif %} -->
         {% if not product.review.all %}
         <p>No comments yet...<a href="#">
             Please add one
