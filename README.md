@@ -14,7 +14,6 @@ Robinson Trailers is created for customers seeking to purchase trailers online. 
     + [User Experience Strategy](#user-experience-strategy)
     + [Structure](#structure)
     + [Technical Design](#technical-design)
-    + [Scope - Epics and User Stories](#scope---epics-and-user-stories)
     + [Wireframes](#wireframes)
     + [Existing Features](#existing-features)
     + [Features Yet to Implement](#features-yet-to-implement)
@@ -134,14 +133,14 @@ As a user, I can click on Proceed to Checkout, so that I can purchase the items 
 
 ### User Experience Strategy
 
-Project goals
+##### Project goals
 
 * Main goal was making a ecommerce site based around business logic used to control a centrally-owned database.
 * The site provides an authentication mechanism for Login, Logout, Registration, Payment. Person who is not a user of the site cannot edit or delete other users review. These functions are also hidden from unlogged users.
 * Making a ecommerce site that uses HTML, CSS, JavaScript, Python + Django.
 * Creating a ecommerce website that uses a relational database.
 
-Business goals
+##### Business goals
 
 * Creating a secure and professional ecommerce website using authentication.
 * Creating a secure payment method.
@@ -151,7 +150,7 @@ Business goals
 * Users should know as soon as they enter the site what is offers and how to use it's features.
 * Makes accessible to everyone even for those who are not related to the transport sector, as store are displayed for everyone.
 
-User Goals
+##### User Goals
 
 * Ability to edit their account details.
 * Check the latest trailers available in the store.
@@ -163,7 +162,7 @@ User Goals
 * Possibility of deleting an unwanted account.
 * To be able to register for an account.
 
-Site Owner goals
+##### Site Owner goals
 
 * Own a ecommerce website which is easy to use and navigate, for all types of users on all devices.
 * Editing, adding newly produced trailers with their descriptions.
@@ -172,7 +171,7 @@ Site Owner goals
 * Access a customers order, edit or remove it if necessary.
 * The ability to answer user questions.
 
-Target audience
+##### Target audience
 
 * Everyone who loves trucking.
 * Website store dedicated to any company involved in logistics.
@@ -180,17 +179,20 @@ Target audience
 * Website store dedicated to the Construction sector.
 * Website store dedicated to the Forestry sector.
 
-Marketing
+##### Marketing
 
-Search Engine Optimisation
+##### Search Engine Optimisation
 
 I have generated a sitemap.xml and robots.txt file.
 
-Meta tags descriptions and keywords
+##### Meta tags 
+
+Descriptions and keywords.
 
 ![](prtsc/images/meta.png)
 
 ### Structure
+
 Pages
 Accessible to all users
 Accessible to signed in users
@@ -198,6 +200,7 @@ Accessible to Admin users
 Pages provided by Django
 
 ### Technical Design
+
 Code Structure
 Other Directories and files
 Database
@@ -207,9 +210,7 @@ The following models have been used to populate the database and for the site to
 
 User - the built in Django User model, facilitates the users basic information
 
-Category - the category in which the product is placed
-
-Brand - the brand of the product
+Category - the category in which the product is placed.
 
 Product - the model for the product itself and its details
 
@@ -223,22 +224,6 @@ UserProfile - the model storing the users product and order information
 
 WishListItem - the customer has the option to save an item, which will then appear in their wish list on the My StepUp page
 
-
-Schema of models
-<Diagrams images>
-
-### Scope - Epics and User Stories
-Epic 1: Base functionality and ease of use
-Epic 2: Products
-Epic 3: The Cart
-Epic 4: Checkout
-Epic 5: User registration and account
-Epic 6: The Wish List
-Epic 7: Reviews
-Epic 8: Contact
-Epic 9: Site Owner functionality
-Epic 10: Terms and Policy
-
 ### Wireframes
 Surface
 Colors
@@ -246,20 +231,106 @@ Design Choices
 Typography
 
 ### Existing Features
-Feature 1: The Navbar
-Feature 2: The Home Page
-Feature 3: The Footer
-Feature 4: The Products List
-Feature 5: The Product Detail Page
-Feature 6: The Cart
-Feature 7: The Checkout Page
-Feature 8: The Order Successful Page
-Feature 9: The Sign Up/In/Out Pages
-Feature 10: My StepUp
-Feature 11: The Wishlist
-Feature 12: The Contact Page
-Feature 13: The Admin Features
-Feature 14: The Django Admin
+
+##### Feature 1: The Navbar
+The navbar allows users to easily navigate the website, no matter which page they are on. 
+The navbar consists of:
+
+* On the left side there is the orginal company logo and the rest of the company name, the whole logo zone allows you to go back to the home page.
+
+* The navbar contains the search functionality, where the user can search for products. The search term would match with the product name or the product description. The search functionality allows users to enter keywords associated with the name or the description of the product. The search results are displayed on the products page.
+
+* Next to the logo there is a categories dropdown menu that allows you to expand the menu and select the appropriate category. A given category sorted the trailers assigned to it.
+
+* If the user is logged in, the Sign Up/Sign may see other options not available to other users that is not register or logout. These options are hidden by authorization. A logged-in user with an account can add a product.
+
+* The navbar contains the shopping cart, where users can see the items they have put in order. The cart redirects to the order summary.
+
+* On the right hand site in my account dropdown menu there is Registration option it is visible to all website visitors, after clicking it redirects to a new page where, after filling in the data, you can create an account.
+
+A search bar at the right hand site is only for decoration, dont have any function. A search function may be added in the future.
+
+##### Feature 2: The Home Page
+
+* The home page serves as an introduction to the company with relevant information.
+
+* On the top should be image. 
+
+* Red button under company short description redirect to all trailers curently available in online store.
+
+* General Information about company located before the footer.
+
+##### Feature 3 Category Dropdown Menu
+
+There is a 4 category dropdown menu:
+
+1. All Products
+This category allow filtering products by:
+- price
+- rating
+- category
+- all products
+
+2. Forestry
+This category filtering products by:
+Diffrent type of trailers:
+- Semi
+- Centre Axle Drawbar
+- Turntable
+- Semi with Crane
+- All Timber Trailers
+
+3. Construction
+This category is similar to forestry also filtering products by:
+Diffrent type of trailers in this sector:
+- Platform
+- Block Crane
+- Bulk Tipper
+- All Construction
+
+4. Special
+This category filtering product by:
+- New Arrivals
+- Deals
+- Clearance
+- All Specials
+
+##### Feature 4: The Footer
+
+* The social media links are placed at the bottom of the footer. Links are connected with true company social media pages, currently manage by me.
+
+* Under social media links I create a Sign up option for newsletter confirming by subscribe button. Unfortunately I dont create functionality yet.
+
+* At the bottom should be placed all relevant links such as the categories of the products, the account, FAQ, return policy and contact.
+
+##### Feature 5: The Products List
+
+
+
+
+##### Feature 6: The Product Detail Page
+
+* The product detail page shows information about that specific trailer, the information includes; name, image, edit or delete option, delivery information, the price and the product description.
+
+* Customer can choose the quantity of the product. The product quantity can be between 1 and 99 items.
+
+* There is a button where the user can add the item to the shopping cart.
+
+* When the user add the item into the cart there will be a toast success message display directly under the cart icon.
+
+* When the user adds the item in the cart, the shopping cart in the navbar will show the number of items that are in the shopping cart. And display the total cost.
+
+* There is also a keep shopping button redirected to all product pages, where customer can add more products.
+
+##### Feature 7: The Cart
+##### Feature 8: The Checkout Page
+##### Feature 9: The Order Successful Page
+##### Feature 10: The Sign Up/In/Out Pages
+##### Feature 11: My StepUp
+##### Feature 12: The Wishlist
+##### Feature 13: The Contact Page
+##### Feature 14: The Admin Features
+##### Feature 15: The Django Admin
 
 ### Features Yet to Implement
 
@@ -277,57 +348,39 @@ JavaScript for alert and location fnunctionality.
 
 This project is built through the framework Django.
 
-GitPod is used to develop the project. All code was written and tested with the Gitpod web-based IDE.
-Git control system was used for version control to commit to Git and push to GitHub.
-GitHub projects repository is used to host the project.
-Heroku is used to host the project/Used to deploy the application.
-Bootstrap 5 as a framework used for styling.
-Pip3 is used for installing the necessary tools, libraries and frameworks.
-Spycopg2 is used to enable the PostGreSQL database to connect with Django.
-AWS Amazon used to store static and media files.(CSS and JavaScript)
-Boto3 is used for compatibility in AWS.
-Gunicorn is used to enable deployment to Heroku.
-Google Fonts is used to provide the font roboto for all the text that is used in the project.
-Font Awesome fonts were used for all icons in this project.
-Figma/Balsamiq used to create the mockup designs for the project.
-Django Crispy Forms is used to style the Django forms
-
-I have used Bootstrap 4 as a framework for styling for efficiency purposes.
-
-The JavaScript framework JQuery was used to minimize written code.
-
-Font Awesome fonts were used for all icons in this project.
-
-Google Fonts - Were used for all fonts in this project.
-
-Facebook Pages was used to create the Facebook Business Page that is linked on the site.
-
-Mailchimp was used to create the newsletter signup form.
-
-Git - Version control system used to commit and push to Github via Gitpod.
-
-Github - The projects repository and all its branches were commited, and pushed to Github.
-
-Heroku - Used to deploy the application.
-
-AWS S3 Bucket - Used to host media (images) and static(CSS and JavaScript) files for the site.
-
-Stripe - Used to process the users payments and handle webhooks.
-
-Gitpod - All code was written and tested with the Gitpod web-based IDE.
-
-Balsamiq Wireframes was used to create wireframe images of the website which you can view here.
-
-Lucidchart was used to create the visual model schema of the project.
+* GitPod is used to develop the project. All code was written and tested with the Gitpod web-based IDE.
+* Git control system was used for version control to commit to Git and push to GitHub.
+* GitHub projects repository is used to host the project.
+* Heroku is used to host the project/Used to deploy the application.
+* Bootstrap 5 as a framework used for styling.
+* Pip3 is used for installing the necessary tools, libraries and frameworks.
+* Spycopg2 is used to enable the PostGreSQL database to connect with Django.
+* AWS Amazon used to store static and media files.(CSS and JavaScript)
+* Boto3 is used for compatibility in AWS.
+* Gunicorn is used to enable deployment to Heroku.
+* Google Fonts is used to provide the font roboto for all the text that is used in the project.
+* Font Awesome fonts were used for all icons in this project.
+* Figma/Balsamiq used to create the mockup designs for the project.
+* Django Crispy Forms is used to style the Django forms
+* JavaScript framework JQuery was used to minimize written code.
+* Social media: Facebook, Instagram, Linkedin, Twitter, Tik Tok was used to create the footer that is linked on the site.
+* Mailchimp should be used to create the newsletter signup form.
+* Whitenoise used to store static and media.
+* Stripe used to process the users payments and handle webhooks.
+* Balsamiq Wireframes was used to create wireframe images of the website. Unfortunatelly I cant login to the website.
 
 #### Database
 PostgreSQL is used as the production database.
 SQlite3 is used as the development database.
+
 ### Testing
+
 ### Other Services
+
 Stripe
 
 ### Validation
+
 Chrome DevTools is used to detect problems and test responsiveness.
 Autoprefixer is used to parse the CSS and to add vendor prefixes to CSS rules.
 W3C Markup Validation Service is used to check whether there were any errors in the HTML5 code.
