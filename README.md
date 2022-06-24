@@ -184,6 +184,10 @@ Marketing
 
 Search Engine Optimisation
 
+I have generated a sitemap.xml and robots.txt file.
+
+Meta tags descriptions and keywords
+
 ![](prtsc/images/meta.png)
 
 ### Structure
